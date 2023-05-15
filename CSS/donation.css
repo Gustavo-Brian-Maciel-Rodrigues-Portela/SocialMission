@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/fundo.jpg);
+    background-size: cover;
+}
+
+#cabecalho {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    border: none;
+    position: relative;
+    left: 60px;
+    height: 100%;
+}
+
+#logo img {
+    height: 100%;
+    width: 68px;
+    transition: 0.4s;
+}
+
+#logo img:hover {
+    opacity: 0.7;
+}
+
+#opcoesCabecalho {
+    position: relative;
+    left: 780px;
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+
+#opcoesCabecalho a {
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    height: 28px;
+}
+
+#opcoesCabecalho #loginCabecalho {
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: rgb(51, 51, 51);
+    background: rgb(93, 141, 105);
+    padding: 0px;
+    width: 100px;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+}
+
+.corpo {
+    height: 90vh;
+}
+
+.section1 {
+    color: #fff;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.section2 {
+    background-color: white;
+    color: black;
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    border-radius: 50px;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(51, 51, 51);
+    text-shadow: none;
+    margin-top: 50px;
+}
+
+h2 {
+    color: black;
+    font-size: 23px;
+    margin-top: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+.pag {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pag_pix {
+    color: white;
+    text-align: center;
+    background: rgb(43, 97, 69);
+    position: relative;
+    font-size: 13px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 53px 17px;
+    margin: 0;
+}
+
+.pag_bl {
+    color: white;
+    text-align: center;
+    background: rgb(43, 97, 69);
+    position: relative;
+    font-size: 13px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 53px 17px;
+    margin: 0;
+}
+
+.pag_pix:hover {
+    color: white;
+    background: rgb(93, 141, 105);
+}
+
+#pix {
+    margin-left: 180px;
+}
+
+#Boleto {
+    background: rgb(93, 141, 105);
+}
+
+.qtd {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.qtd-100,
+.qtd-20,
+.qtd-10,
+.qtd-50,
+.qtd-5 {
+    color: white;
+    text-align: center;
+    background: rgb(43, 97, 69);
+    position: relative;
+    font-size: 13px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 53px 17px;
+    margin: 0;
+}
+
+.qtd-5:hover {
+    color: white;
+    background: rgb(93, 141, 105);
+}
+
+#qtd-5 {
+    margin-left: 40px;
+}
+
+#qtd-100,
+#qtd-20,
+#qtd-10,
+#qtd-50 {
+    background: rgb(93, 141, 105);
+}
+
+#donation #EnviarDoacao {
+    border-radius: 7px;
+    border: 1px solid rgb(51, 51, 51);
+    background: rgb(93, 141, 105);
+    height: 35px;
+    width: 35%;
+    color: white;
+}
+
+#Donate {
+    border-radius: 7px;
+    border: 1px solid rgb(51, 51, 51);
+    background: rgb(93, 141, 105);
+    width: 80%;
+    color: white;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-color: rgb(93, 141, 105);
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+/*Rodape*/
+footer {
+    width: 100%;
+    min-height: 250px;
+    border-color: rgb(43, 97, 69);
+    background: rgb(214, 219, 222);
+    display: flex;
+}
+
+footer .boxs {
+    width: 33%;
+    min-height: 150px;
+    padding: 20px;
+}
+
+footer .boxs:nth-child(4) {
+    width: 400px;
+}
+
+.boxs h2 {
+    color: black;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: 0;
+}
+
+.boxs ul li {
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.boxs ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.boxs ul li a:hover {
+    color: rgb(43, 97, 69);
+}
+
+input {
+    width: 54%;
+    height: 25px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+textarea {
+    width: 54%;
+    height: 100px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.boxs p {
+    color: #fff;
+    text-align: justify;
+}
+
+.btn {
+    border-radius: 10px;
+    border-width: 0px;
+    border-color: rgb(51, 51, 51);
+    background: rgb(93, 141, 105);
+    padding: 0px;
+    width: 100px;
+    height: 30px;
+    margin-right: 50px;
+    color: white;
+    font-size: 16px;
+}
+
+.btn a {
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
