@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#cabecalho {
+    height: 500px;
+    background-image: url(../Midia/imgIndex/hands.jpeg);
+    background-position: end;
+}
+
+#subCabecalho1 {
+    height: 16.66%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#containerLogo,
+#containerLogo img {
+    height: 70px;
+    width: 70px;
+    margin-left: 25px;
+}
+
+#containerOpcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.opcoes {
+    color: black;
+    font-size: 15px;
+    margin: 15px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.opcoes:hover {
+    color: rgb(93, 141, 105);
+}
+
+#opcaoLogin {
+    border-radius: 10px;
+    background: rgb(93, 141, 105);
+    width: 93px;
+    height: 39px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+
+#opcaoLogin:hover {
+    opacity: 0.7;
+}
+
+#subCabecalho2 {
+    height: 83.33%;
+}
+
+#mascara {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#mascara div {
+    height: 216px;
+    width: 610px;
+}
+
+#mascara div h1 {
+    color: white;
+    font-size: 120px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+#mascara div p {
+    color: white;
+}
+
+#boxSubCabecalho2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-bottom: 80px;
+}
