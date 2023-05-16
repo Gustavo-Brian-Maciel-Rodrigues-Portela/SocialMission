@@ -229,83 +229,136 @@ p {
     margin: 10px;
     margin-top: 20px;
 }
-
-/*Rodape*/
-footer {
-    width: 100%;
-    min-height: 250px;
-    border-color: rgb(43, 97, 69);
-    background: rgb(214, 219, 222);
+#rodape {
+    height: 300px;
+    background-color: rgb(217, 217, 219);
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-footer .boxs {
-    width: 33%;
-    min-height: 150px;
-    padding: 20px;
+.containerRodape {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -40px;
 }
 
-footer .boxs:nth-child(4) {
-    width: 400px;
+#caixaRodape1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 17px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(70, 70, 70);
+    text-shadow: none;
 }
 
-.boxs h2 {
-    color: black;
-    margin-bottom: 20px;
-    text-align: justify;
-    margin-left: 0;
+#caixaRodape1 h3 {
+    margin-bottom: 10px;
 }
 
-.boxs ul li {
-    margin: 10px 0px;
-    list-style: none;
+#caixaRodape1 p {
+    margin: 7px;
+    margin-left: 30px;
+    width: 110px;
+    font-size: 18px;
 }
 
-.boxs ul li a {
-    color: black;
-    text-decoration: none;
+#caixaRodape2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(70, 70, 70);
+    text-shadow: none;
 }
 
-.boxs ul li a:hover {
-    color: rgb(43, 97, 69);
+#caixaRodape2 h3 {
+    margin-bottom: 18px;
 }
 
-input {
-    width: 54%;
-    height: 25px;
-    margin: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+.inputTextRodape {
+    height: 43px;
+    width: 250px;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
-textarea {
-    width: 54%;
-    height: 100px;
-    margin: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+#caixaRodape2 textarea {
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
-.boxs p {
-    color: #fff;
-    text-align: justify;
-}
-
-.btn {
-    border-radius: 10px;
-    border-width: 0px;
+#submitRodape2 {
+    width: 110px;
+    border-radius: 19px;
+    border-width: 1px;
     border-color: rgb(51, 51, 51);
     background: rgb(93, 141, 105);
     padding: 0px;
-    width: 100px;
-    height: 30px;
-    margin-right: 50px;
+    border-style: solid;
     color: white;
-    font-size: 16px;
+    padding: 12px;
+    position: relative;
+    left: 70px;
+    top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s ease;
 }
 
-.btn a {
-    color: white;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+#submitRodape2:hover {
+    opacity: 0.7;
+}
+
+#caixaRodape3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(70, 70, 70);
+    text-shadow: none;
+}
+
+#caixaRodape3 h3 {
+    position: relative;
+    top: -7px;
+}
+
+#caixaRodape3 img{
+    width:350px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+}
+
+#cellCaixaRodape3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    position: relative;
+    top: -10px;
+}
+
+#cellCaixaRodape3 p {
+    margin: 10px;
 }
