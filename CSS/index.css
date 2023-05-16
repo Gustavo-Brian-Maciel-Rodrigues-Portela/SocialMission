@@ -7,7 +7,7 @@
 
 #cabecalho {
     height: 500px;
-    background-image: url(hands.jpeg);
+    background-image: url(../Midia/imgIndex/hands.jpeg);
     background-position: end;
 }
 
@@ -242,7 +242,7 @@
 }
 
 #trendingContainer {
-    background-image: url(/caco.jpg);
+    background-image: url(../Midia/imgIndex/caco.jpg);
     background-size: cover;
     height: 367px;
     width: 1032px;
@@ -365,29 +365,29 @@
 }
 
 #bixoVermelho {
-    background-image: url(/bixoVermelho.jpg);
+    background-image: url(../Midia/imgIndex/bixoVermelho.jpg);
 }
 
 #pingu {
-    background-image: url(/pingu.jpg);
+    background-image: url(../Midia/imgIndex/pingu.jpg);
 }
 
 #macarraoEmChamas {
-    background-image: url(/macarraoEmChamas.jpg);
+    background-image: url(../Midia/imgIndex/macarraoEmChamas.jpg);
 }
 
 #burro {
-    background-image: url(/burro.jpg);
+    background-image: url(../Midia/imgIndex/burro.jpg);
     background-position-y: 0px;
 }
 
 #ratinho {
-    background-image: url(/ratinho.jpg);
+    background-image: url(../Midia/imgIndex/ratinho.jpg);
     background-position-y: 0px;
 }
 
 #caco {
-    background-image: url(/caco.jpg);
+    background-image: url(../Midia/imgIndex/caco.jpg);
 }
 
 .mascaraCards {
