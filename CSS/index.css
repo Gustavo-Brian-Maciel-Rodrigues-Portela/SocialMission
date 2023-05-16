@@ -7,7 +7,7 @@
 
 #cabecalho {
     height: 500px;
-    background-image: url(../Midia/imgIndex/hands.jpeg);
+    background-image: url(hands.jpeg);
     background-position: end;
 }
 
@@ -98,4 +98,29 @@
     flex-direction: column;
     margin-left: 120px;
     margin-bottom: 80px;
+}
+
+#linkSubCabecalho2 {
+    border-radius: 30px;
+    background: rgb(93, 141, 105);
+    color: white;
+    text-align: center;
+    transition: 0.4s ease;
+    text-decoration: none;
+    width: 25%;
+    padding: 2.5%;
+    border: 1px solid rgb(51, 51, 51);
+    position: relative;
+    left: 2%;
+    top: 20%;
+}
+
+#linkSubCabecalho2:hover {
+    background: rgb(133, 172, 143);
+}
+
+#imgSubCabecalho2{
+    position: absolute;
+    left: 60%;
+    width: 370px;
 }
