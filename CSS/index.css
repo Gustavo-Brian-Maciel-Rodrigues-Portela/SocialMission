@@ -124,3 +124,319 @@
     left: 60%;
     width: 370px;
 }
+
+#filterVacanciesBox {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 130px;
+}
+
+#filterVacanciesBox img {
+    height: 30%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+}
+
+#filterVacanciesBox p {
+    font-size: 27px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(51, 51, 51);
+    text-shadow: none;
+    position: relative;
+    left: 8.5%;
+    top: 40%;
+}
+
+#selectFilterVacanciesContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+    position: relative;
+    left: 11.5%;
+    margin-bottom: 20px;
+    width: 85%;
+    margin-left: 30px;
+}
+
+.selectFilterVacanciesBox {
+    width: 20%;
+    height: 100%;
+    margin-left: 3px;
+}
+
+.selectFilterVacanciesBox h3 {
+    position: relative;
+    left: -6.5%;
+    margin-bottom: 20px;
+}
+
+.selectFilterVacanciesBox select {
+    width: 80%;
+    height: 40%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.selectFilterVacanciesBox input {
+    width: 80%;
+    height: 40%;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 3px 5px;
+}
+
+#selectFilterVacanciesContainer button {
+    border-radius: 30px;
+    background: rgb(93, 141, 105);
+    color: white;
+    text-align: center;
+    transition: 0.4s ease;
+    text-decoration: none;
+    border: 1px solid rgb(51, 51, 51);
+    padding: 15px 65px;
+    font-size: 17px;
+    position: relative;
+    top: 5%;
+    left: 2%;
+    cursor: pointer;
+}
+
+#selectFilterVacanciesContainer button:hover {
+    opacity: 0.7;
+}
+
+#trandingBox {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+
+#trandingBox img {
+    height: 30%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+}
+
+#trandingBox p {
+    position: relative;
+    top: 50%;
+    font-size: 27px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(51, 51, 51);
+    text-shadow: none;
+    transform: translateY(-50%);
+    left: 10%;
+}
+
+#trendingContainer {
+    background-image: url(../Midia/imgIndex/caco.jpg);
+    background-size: cover;
+    height: 367px;
+    width: 1032px;
+    border-radius: 30px;
+    box-shadow: 0px 1px 20px black;
+    margin-top: 70px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#trendingSetaEsquerda {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    z-index: 2;
+}
+
+#trendingSetaEsquerda:hover {
+    opacity: 0.5;
+}
+
+#trendingSetaDireita {
+    position: relative;
+    left: 44.6%;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+#trendingSetaDireita:hover {
+    opacity: 0.5;
+}
+
+#mascaraTrending {
+    height: 367px;
+    width: 1032px;
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#trendingBox {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    position: relative;
+    left: 55px;
+    top: -20px;
+}
+
+#trendingBox h3 {
+    margin: 5px;
+}
+
+#trendingBox h1 {
+    width: 400px;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#trendingBox p {
+    font-weight: bold;
+}
+
+#vacancies {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#vacancies img {
+    height: 30%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+}
+
+#vacancies p {
+    position: relative;
+    top: 50%;
+    font-size: 27px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(51, 51, 51);
+    text-shadow: none;
+    transform: translateY(-50%);
+    left: 10%;
+    width: 100px;
+}
+
+#vacanciesEndContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vacanciesEndBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cards {
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    margin: 45px;
+    display: flex;
+    align-items: end;
+}
+
+#bixoVermelho {
+    background-image: url(../Midia/imgIndex/bixoVermelho.jpg);
+}
+
+#pingu {
+    background-image: url(../Midia/imgIndex/pingu.jpg);
+}
+
+#macarraoEmChamas {
+    background-image: url(../Midia/imgIndex/macarraoEmChamas.jpg);
+}
+
+#burro {
+    background-image: url(../Midia/imgIndex/burro.jpg);
+    background-position-y: 0px;
+}
+
+#ratinho {
+    background-image: url(../Midia/imgIndex/ratinho.jpg);
+    background-position-y: 0px;
+}
+
+#caco {
+    background-image: url(../Midia/imgIndex/caco.jpg);
+}
+
+.mascaraCards {
+    background-color: white;
+    width: 100%;
+    height: 40%;
+    box-shadow: 0px 2px 30px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mascaraCards p {
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.mascaraCards a {
+    margin-left: 230px;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.mascaraCards a:hover {
+    opacity: 0.7;
+}
+
+#seeMore {
+    position: relative;
+    left: 45%;
+    top: 100%;
+    font-size: 27px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(51, 51, 51);
+    text-shadow: none;
+    width: 150px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+    background: none;
+}
+
+#seeMore:hover {
+    opacity: 0.7;
+}
