@@ -1,38 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Donation</title>
-  <link href="CSS/donation.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/donation.css">
+  <title>Document</title>
 </head>
 
 <body>
 
   <!--Cabecalho-->
   <header id="cabecalho">
-    <a id="logo" href="#"><img src="Midia/imgDonation/logo.jpeg" alt=""></a>
-    <div id="opcoesCabecalho">
-      <a href="campaing.html">
-        Campaign
-      </a>
-      <a href="home.html">
-        Home
-      </a>
-      <a href="aboutus.html">
-        About us
-      </a>
-      <a href="donation.html">
-        Donations
-      </a>
-      <a id="loginCabecalho" href="login.html">
-        Login
-      </a>
-
+    <div id="subCabecalho1">
+      <div id="containerLogo">
+        <img src="Midia/imgIndex/logo.png" alt="logoDoSite">
+      </div>
+      <div id="containerOpcoes">
+        <a class="opcoes" href="campaing.html">Campaing</a>
+        <a class="opcoes" href="">Home</a>
+        <a class="opcoes" href="">About Us</a>
+        <a class="opcoes" href="">Contact</a>
+        <a class="opcoes" href="donation.html">Donations</a>
+        <a class="opcoes" href="login.html" id="opcaoLogin">Login</a>
+      </div>
     </div>
   </header>
-
   <br>
   <!--Corpo-->
   <div class="corpo">
@@ -45,6 +39,7 @@
         <h1><strong>Donation</strong></h1>
 
         <h2>Payment Method: </h2>
+
         <div class="pag">
           <button class="pag_pix" type="button" id="pix">Pix</button>
           <button class="pag_bl" type="button" id="Boleto">Boleto</button>
@@ -64,12 +59,20 @@
 
         <button id="Donate">Donate</button>
 
-        <p>
-          Ao preencher o formulário, você está aceitando os termos de nossa Politicas <br> de Privacidade. Suas
-          informações permanecerao <br> confidenciais e poderao ser usadas para mante-lo informado sobre nosso <br>
-          trabalho e para pedir sua ajudar em nossa missão de dar <br> uma vida melhor para os funcionarios dessa
-          empresa. Nosso contato <br> poderá ser feito, inclucive, por meio de notificações via <br> e-mal, SMS e
-          Whatsapp.
+        <p id="politica">
+          Ao preencher o formulário, você está aceitando os termos de nossa Politicas de Privacidade. Suas informações
+          permanecerao
+        </p>
+        <p id="politica">
+          confidenciais e poderao ser usadas para mante-lo informado sobre nosso trabalho e para pedir sua ajudar em
+          nossa missão de dar
+        </p>
+        <p id="politica">
+          uma vida melhor para os funcionarios dessa empresa. Nosso contato poderá ser feito, inclucive, por meio de
+          notificações via
+        </p>
+        <p id="politica">
+          e-mal, SMS e Whatsapp.
         </p>
       </div>
     </section>
@@ -77,43 +80,46 @@
   <br>
 
   <footer id="rodape">
-        <div class="containerRodape">
-            <div id="caixaRodape1">
-                <h3>Social Mission</h3>
-                <p>Blog</p>
-                <p>Guia de Voluntariado</p>
-                <p>Como engajar voluntários</p>
-                <p>Ajuda</p>
-                <p>Trabalhe Conosco</p>
-            </div>
+    <div class="containerRodape">
+      <div id="caixaRodape1">
+        <h3>Social Mission</h3>
+        <p>Blog</p>
+        <p>Guia de Voluntariado</p>
+        <p>Como engajar voluntários</p>
+        <p>Ajuda</p>
+        <p>Trabalhe Conosco</p>
+      </div>
+    </div>
+    <div class="containerRodape">
+      <div id="caixaRodape2">
+        <h3>Contact</h3>
+        <input type="text" class="inputTextRodape" placeholder="Enter your name">
+        <input type="text" class="inputTextRodape" placeholder="Enter an email">
+        <textarea name="" id="" cols="30" rows="4" placeholder="Enter your text"
+          style="resize: none;">Enter your text</textarea>
+        <input id="submitRodape2" type="submit" value="submit">
+      </div>
+    </div>
+    <div class="containerRodape">
+      <div id="caixaRodape3">
+        <h3>Social Media</h3>
+        <img src="Midia/imgCampaing/redes sociais.jpeg" alt="Redes sociais">
+        <div id="cellCaixaRodape3">
+          <div>
+            <p style="font-weight: bold;">+</p>
+            <p>Direitos humanos</p>
+            <p>Educação</p>
+            <p>Idosos</p>
+            <p>Jovens</p>
+          </div>
+          <div>
+            <p>LGBTI+</p>
+            <p>Meio Ambiente</p>
+          </div>
         </div>
-        <div class="containerRodape">
-            <div id="caixaRodape2">
-                <h3>Contact</h3>
-                <input type="text" class="inputTextRodape" placeholder="Enter your name">
-                <input type="text" class="inputTextRodape" placeholder="Enter an email">
-                <textarea name="" id="" cols="30" rows="4" placeholder="Enter your text"
-                    style="resize: none;"></textarea>
-                <input id="submitRodape2" type="submit" value="submit">
-            </div>
-        </div>
-        <div class="containerRodape">
-            <div id="caixaRodape3">
-                <h3>Social Media</h3>
-                <img src="Midia/imgCampaing/redes sociais.jpeg" alt="Redes sociais">
-                <div id="cellCaixaRodape3">
-                    <div>
-                        <p style="font-weight: bold;">+</p>
-                        <p>Direitos humanos</p>
-                        <p>Educação</p>
-                        <p>Idosos</p>
-                        <p>Jovens</p>
-                    </div>
-                    <div>
-                        <p>LGBTI+</p>
-                        <p>Meio Ambiente</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
