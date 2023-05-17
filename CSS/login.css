@@ -146,6 +146,7 @@ form {
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
+    text-decoration: none;
 }
 
 #submit:hover {
