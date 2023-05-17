@@ -2,172 +2,441 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
-    height: 100vh;
-    width: 100vw;
+    font-family: sans-serif;
 }
 
 #cabecalho {
-    height: 13%;
-    width: 100%;
+    height: 500px;
+    background-image: url(../Midia/imgIndex/hands.jpeg);
+    background-position: end;
+}
+
+#subCabecalho1 {
+    height: 16.66%;
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.73);
-    box-shadow: 1px 20px 40px black;
-    font-family: sans-serif;
-    font-size: 16px;
 }
 
-#logo1 {
-    height: 85%;
+#containerLogo,
+#containerLogo img {
+    height: 70px;
+    width: 70px;
+    margin-left: 25px;
+}
+
+#containerOpcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.opcoes {
+    color: black;
+    font-size: 15px;
+    margin: 15px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.opcoes:hover {
+    color: rgb(93, 141, 105);
+}
+
+#opcaoLogin {
+    border-radius: 10px;
+    background: rgb(93, 141, 105);
+    width: 93px;
+    height: 39px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+
+#opcaoLogin:hover {
+    opacity: 0.7;
+}
+
+#subCabecalho2 {
+    height: 83.33%;
+}
+
+#mascara {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.603);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+#mascara div {
+    height: 216px;
+    width: 610px;
+}
+
+#mascara div h1 {
+    color: white;
+    font-size: 120px;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+#mascara div p {
+    color: white;
+}
+
+#boxSubCabecalho2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-bottom: 80px;
+}
+
+#linkSubCabecalho2 {
+    border-radius: 30px;
+    background: rgb(93, 141, 105);
+    color: white;
+    text-align: center;
+    transition: 0.4s ease;
+    text-decoration: none;
+    width: 25%;
+    padding: 2.5%;
+    border: 1px solid rgb(51, 51, 51);
+    position: relative;
+    left: 2%;
+    top: 20%;
+}
+
+#linkSubCabecalho2:hover {
+    background: rgb(133, 172, 143);
+}
+
+#imgSubCabecalho2 {
+    position: absolute;
+    left: 60%;
+    width: 370px;
+}
+
+#filterVacanciesBox {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 130px;
+}
+
+#filterVacanciesBox img {
+    height: 30%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+}
+
+#filterVacanciesBox p {
+    font-size: 27px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(51, 51, 51);
+    text-shadow: none;
+    position: relative;
+    left: 8.5%;
+    top: 40%;
+}
+
+#selectFilterVacanciesContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+    position: relative;
+    left: 11.5%;
+    margin-bottom: 20px;
+    width: 85%;
     margin-left: 30px;
 }
 
-#containerBotaoCabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.selectFilterVacanciesBox {
+    width: 20%;
     height: 100%;
-    margin-right: 40px;
+    margin-left: 3px;
 }
 
-.botaoCabecalho {
-    margin: 0 15px;
-    border: none;
+.selectFilterVacanciesBox h3 {
     position: relative;
-    font-size: 1em;
-    transition: 0.2s;
-    text-decoration: none;
-    color: black;
-}
-
-.botaoCabecalho:hover {
-    cursor: pointer;
-    color: rgb(80, 177, 123);
-}
-
-#botaoLogin {
-    background-color: rgb(89, 139, 108);
-    color: white;
-    padding: 11px 30px;
-    border-radius: 10px;
-    transition: 0.5s;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-#botaoLogin:hover {
-    background-color: rgb(155, 192, 157);
-}
-
-#secao1 {
-    height: 87%;
-    width: 45%;
-    position: absolute;
-    top: 13%;
-    background-color: rgba(216, 236, 236, 0.753);
-    border-color: rgb(255, 255, 255);
-    box-shadow: black;
-}
-
-#containerLogin {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-form {
-    height: 100%;
-    width: 100%;
-}
-
-#tituloLogin {
-    font-size: 46px;
-    font-family: "Arial Black", Gadget, sans-serif;
-    text-align: left;
-    letter-spacing: 0px;
-    line-height: 1;
-    color: rgb(51, 51, 51);
-    text-shadow: none;
+    left: -6.5%;
     margin-bottom: 20px;
 }
 
-.caixaLogin {
-    width: 400px;
-    margin: 13px;
+.selectFilterVacanciesBox select {
+    width: 80%;
+    height: 40%;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
-.caixaLogin input {
-    width: 100%;
-    height: 45px;
-    border-radius: 50px;
-    border-style: solid;
-    padding: 5px;
+.selectFilterVacanciesBox input {
+    width: 80%;
+    height: 40%;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 3px 5px;
+}
+
+#selectFilterVacanciesContainer button {
+    border-radius: 30px;
+    background: rgb(93, 141, 105);
+    color: white;
+    text-align: center;
+    transition: 0.4s ease;
+    text-decoration: none;
+    border: 1px solid rgb(51, 51, 51);
+    padding: 15px 65px;
     font-size: 17px;
+    position: relative;
+    top: 5%;
+    left: 2%;
+    cursor: pointer;
 }
 
-.caixaLogin label {
-    font-size: 22px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+#selectFilterVacanciesContainer button:hover {
+    opacity: 0.7;
+}
+
+#trandingBox {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+
+#trandingBox img {
+    height: 30%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+}
+
+#trandingBox p {
+    position: relative;
+    top: 50%;
+    font-size: 27px;
+    font-family: "Source Sans Pro", sans-serif;
     text-align: left;
     letter-spacing: 0px;
     line-height: 1;
     color: rgb(51, 51, 51);
     text-shadow: none;
+    transform: translateY(-50%);
+    left: 10%;
 }
 
-.caixaLogin a {
-    text-decoration: none;
-    color: blue;
-    font-family: sans-serif;
-    font-size: small;
+#trendingContainer {
+    background-image: url(../Midia/imgIndex/caco.jpg);
+    background-size: cover;
+    height: 367px;
+    width: 1032px;
+    border-radius: 30px;
+    box-shadow: 0px 1px 20px black;
+    margin-top: 70px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-#submit {
-    border-radius: 22px;
-    border-width: 1px;
-    border-color: rgb(51, 51, 51);
-    background: rgb(93, 141, 105);
-    height: 50px;
-    width: 120px;
-    margin: 20px;
-    border-style: solid;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    transition: 0.4s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-
-#submit:hover {
+#trendingSetaEsquerda {
+    margin-left: 20px;
     cursor: pointer;
-    opacity: 0.7;
-    font-size: 18px;
+    transition: 0.4s ease;
+    z-index: 2;
 }
 
-#secao2 {
-    height: 87%;
-    width: 55%;
-    position: absolute;
-    top: 13%;
-    left: 45%;
+#trendingSetaEsquerda:hover {
+    opacity: 0.5;
+}
+
+#trendingSetaDireita {
+    position: relative;
+    left: 44.6%;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+#trendingSetaDireita:hover {
+    opacity: 0.5;
+}
+
+#mascaraTrending {
+    height: 367px;
+    width: 1032px;
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 30px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    background-image: linear-gradient(45deg, rgb(120, 212, 120), rgb(137, 212, 180));
-    opacity: 0.8;
 }
 
-#logo2 {
-    height: 100%;
+#trendingBox {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    position: relative;
+    left: 55px;
+    top: -20px;
+}
+
+#trendingBox h3 {
+    margin: 5px;
+}
+
+#trendingBox h1 {
+    width: 400px;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+#trendingBox p {
+    font-weight: bold;
+}
+
+#vacancies {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#vacancies img {
+    height: 30%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+}
+
+#vacancies p {
+    position: relative;
+    top: 50%;
+    font-size: 27px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(51, 51, 51);
+    text-shadow: none;
+    transform: translateY(-50%);
+    left: 10%;
+    width: 100px;
+}
+
+#vacanciesEndContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vacanciesEndBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cards {
+    border-radius: 20px;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    margin: 45px;
+    display: flex;
+    align-items: end;
+}
+
+#bixoVermelho {
+    background-image: url(../Midia/imgIndex/bixoVermelho.jpg);
+}
+
+#pingu {
+    background-image: url(../Midia/imgIndex/pingu.jpg);
+}
+
+#macarraoEmChamas {
+    background-image: url(../Midia/imgIndex/macarraoEmChamas.jpg);
+}
+
+#burro {
+    background-image: url(../Midia/imgIndex/burro.jpg);
+    background-position-y: 0px;
+}
+
+#ratinho {
+    background-image: url(../Midia/imgIndex/ratinho.jpg);
+    background-position-y: 0px;
+}
+
+#caco {
+    background-image: url(../Midia/imgIndex/caco.jpg);
+}
+
+.mascaraCards {
+    background-color: white;
+    width: 100%;
+    height: 40%;
+    box-shadow: 0px 2px 30px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mascaraCards p {
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.mascaraCards a {
+    margin-left: 230px;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.mascaraCards a:hover {
+    opacity: 0.7;
+}
+
+#seeMore {
+    position: relative;
+    left: 45%;
+    top: 100%;
+    font-size: 27px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(51, 51, 51);
+    text-shadow: none;
+    width: 150px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s ease;
+    background: none;
+}
+
+#seeMore:hover {
+    opacity: 0.7;
 }
