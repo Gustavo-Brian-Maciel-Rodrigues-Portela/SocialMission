@@ -326,6 +326,7 @@ h1.destaque~p {
     line-height: 1;
     color: rgb(70, 70, 70);
     text-shadow: none;
+    width: 250px;
 }
 
 #caixaRodape2 h3 {
