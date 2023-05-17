@@ -6,9 +6,8 @@
 
 body {
     background-repeat: no-repeat;
-    background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Midia/imgDonation/fundo.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Midia/imgDonation/fundo.jpg);
     background-size: cover;
-    
 }
 
 #subCabecalho1 {
@@ -84,7 +83,7 @@ body {
 .section2 {
     background-color: white;
     color: black;
-    width: 47%;
+    width: 40%;
     height: 90vh;
     display: flex;
     border-radius: 15px;
@@ -327,7 +326,6 @@ h1.destaque~p {
     line-height: 1;
     color: rgb(70, 70, 70);
     text-shadow: none;
-    width: 250px;
 }
 
 #caixaRodape2 h3 {
