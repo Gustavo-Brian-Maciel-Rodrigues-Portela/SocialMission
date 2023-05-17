@@ -1,212 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Visualização de Vaga</title>
-    <link href="CSS/visualizacaovaga.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaing</title>
+    <link rel="stylesheet" href="./VisuVaga.css">
 </head>
 
 <body>
-
     <header id="cabecalho">
-        <a id="logo" href="#"><img src="Midia/imgDonation/logo.jpeg" alt=""></a>
-        <div id="opcoesCabecalho">
-            <a href="Campaing.html">
-                Campaign
-            </a>
-            <a href="Home.html">
-                Home
-            </a>
-            <a href="Aboutus.html">
-                About us
-            </a>
-            <a href="donation.html">
-                Donations
-            </a>
-            <a id="loginCabecalho" href="Login.html">
-                Login
-            </a>
-
+        <div id="subCabecalho1">
+            <div id="containerLogo">
+                <img src="./imgs/socialMission.png" alt="logoDoSite">
+            </div>
+            <div id="containerOpcoes">
+                <a class="opcoes" href="">Campaning</a>
+                <a class="opcoes" href="">Home</a>
+                <a class="opcoes" href="">About Us</a>
+                <a class="opcoes" href="">Contact</a>
+                <a class="opcoes" href="/HTML/donation.html">Donations</a>
+                <a class="opcoes" href="/HTML/login.html" id="opcaoLogin">Login</a>
+            </div>
         </div>
     </header>
 
-    <br>
-    
-    <div class="corpo">
-        <div class="pesqconsumidor">
-            <p id="Linkspesquisas">
-                Home > Campaing > visualização da vaga
-            </p>
-        </div>
+    <main>
 
-        <div class="vaga">
-            <h1 id="titulovaga">
-                Vagancy Title
-            </h1>
-        </div>
+        <div class="path"><p>Home > Campaning > Vaga01</p></div>
 
-        <section class="section1">
-            <img src="" alt="">
+        <h1 class="titulo-vaga">Vaga01</h1>
+        <section class="body-vaga">
+            <div class="container-img">
+                <img src="./imgs/caco.jpg" alt="sapo">
 
-            <div class="descrition">
-                <h3>
-                    Description
-                </h3>
-                <p id="miolodescricao">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam libero minus neque, repudiandae odio
-                    ducimus, tempora ipsum in expedita harum eos non labore! Ad earum, modi possimus voluptatem eius
-                    laudantium!
+                <div class="info">
+                    <h2 class="description">Description:</h2>
+                    <p class="p-desc">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        Lorem ipsum Lorem ipsum Lorem ipsum
+                    </p>
+                    <div class="flex">
+                        <h2 class="subtopic">Local:</h2>
+                        <p>HOSPITAL ADDR 2 LOTE 5555 </p>    
+                    </div>
+                    <div class="flex">
+                        <h2 class="subtopic">Hours p/ day:</h2>
+                        <p>3</p>
+                    </div>
+                    <div class="flex">
+                        <h2 class="subtopic">Author:</h2>
+                        <p>Auto01</p>
+                    </div>
+                    <div class="flex">
+                        <h2 class="subtopic">Available vacancies:</h2>
+                        <p>5</p>
+                        <div class="expires">
+                            <h2 style="font-size: 20px;">Expires in: 05/20/2023</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-data">
+                <hr class="linha">
+                <h1 class="date">Date:</h1>
+                <input class="calendario" type="date">
+                <p class="text">
+                    Tell me what period you wish start and finish your volunteer work
                 </p>
-                <h4>
-                    Local: 
-                </h4>
-                <h4>
-                    Horas Disponivel por dia: 
-                </h4>
-                <h4>
-                    Profissional: 
-                </h4>
+                <h1 class="date">Hours:</h1>
+                <div class="period">
+                    <h2>Start:</h2>
+                    <input class="hour" type="time">    
+                    <h2>End:</h2>
+                    <input class="hour" type="time">    
+                </div>
 
-                <div class="combo">
-                    <h4 id="disponibilidade">
-                        Vagas disponiveis: 
-                    </h4>
+                <button class="apply">Apply</button>
 
-                    <h4 id="disponibilidade">
-                        Data de expirar: 
-                    </h4>
+                <div class="avaliacao">
+                    <h4>Rate this vacancy:</h4>
                 </div>
             </div>
         </section>
 
-        <section class="section2">
-            <div id="donation">
-                <h1>Donation</h1>
+    </main>
 
-                <h2>Payment Method: </h2>
-                <input type="button" value="Pix" id="pix">
-                <input type="button" value="Boleto" id="boleto">
-
-                <h2>Quantity: </h2>
-                <input type="button" value="R$ 5" id="cinco">
-                <input type="button" value="R$ 10">
-                <input type="button" value="R$ 20">
-                <input type="button" value="R$ 50">
-                <input type="button" value="R$ 100" id="cem">
-
-                <br><br>
-
-                <button id="Donate">Donate</button>
-
-                <p>
-                    Ao preencher o formulário, você está aceitando os termos de nossa Politicas <br> de Privacidade.
-                    Suas informações permanecerao <br> confidenciais e poderao ser usadas para mante-lo informado sobre
-                    nosso <br> trabalho e para pedir sua ajudar em nossa missão de dar <br> uma vida melhor para os
-                    funcionarios dessa empresa. Nosso contato <br> poderá ser feito, inclucive, por meio de notificações
-                    via <br> e-mal, SMS e Whatsapp.
-                </p>
-            </div>
-        </section>
-    </div>
-    <br>
-
-    <!--Rodape-->
-    <footer>
-        <div class="boxs">
-            <h2>Social Mission</h2>
-            <ul>
-                <li>
-                    <a href="Blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="Guiavoluntario.html">Guia de Voluntario</a>
-                </li>
-                <li>
-                    <a href="Voluntarios.html">Como Arranjar voluntarios</a>
-                </li>
-
-                <li>
-                    <a href="Help.html">Ajuda</a>
-                </li>
-
-                <li>
-                    <a href="Trabalheconosco.html">Trabalhe conosco</a>
-                </li>
-            </ul>
-        </div>
-
-
-
-        <div class="boxs">
-            <h2>Contact</h2>
-            <div class="content">
-                <form action="#">
-                    <div class="nane">
-                        <div class="text">Digite o Seu nome: </div>
-                        <input type="name">
-                    </div>
-
-                    <div class="email">
-                        <div class="text">Email: </div>
-                        <input type="email" required>
-                    </div>
-
-                    <div class="msg">
-                        <div class="text">Mensagem: </div>
-                        <textarea cols="30" rows="10"></textarea>
-                    </div>
-
-                    <div class="btn">
-                        <button class="btn" type="submit">Enviar</button>
-                    </div>
-                </form>
+    <footer id="rodape">
+        <div class="containerRodape">
+            <div id="caixaRodape1">
+                <h3>Social Mission</h3>
+                <p>Blog</p>
+                <p>Guia de Voluntariado</p>
+                <p>Como engajar voluntários</p>
+                <p>Ajuda</p>
+                <p>Trabalhe Conosco</p>
             </div>
         </div>
-
-        <div class="boxs">
-            <h2>Social Midia</h2>
-            <ul>
-                <li>
-                    <img src="Midia/imgVisualizacaoVaga/redes sociais.jpeg" alt="" height="70px" width="70%">
-                </li>
-
-                <li>
-                    <a href="#">Direitos Humanos</a>
-                </li>
-                <li>
-                    <a href="#">Educação</a>
-                </li>
-                <li>
-                    <a href="#">Idosos</a>
-                </li>
-
-                <li>
-                    <a href="#">Jovens</a>
-                </li>
-
-                <li>
-                    <a href="#">Lgbt+</a>
-                </li>
-
-                <li>
-                    <a href="#">Meio Ambiente</a>
-                </li>
-            </ul>
+        <div class="containerRodape">
+            <div id="caixaRodape2">
+                <h3>Contact</h3>
+                <input type="text" class="inputTextRodape" placeholder="Enter your name">
+                <input type="text" class="inputTextRodape" placeholder="Enter an email">
+                <textarea name="" id="" cols="30" rows="4" placeholder="Enter your text"
+                    style="resize: none;"></textarea>
+                <input id="submitRodape2" type="submit" value="submit">
+            </div>
         </div>
-
-
+        <div class="containerRodape">
+            <div id="caixaRodape3">
+                <h3>Social Media</h3>
+                <img src="../imgs/redes sociais.jpeg" alt="Redes sociais">
+                <div id="cellCaixaRodape3">
+                    <div>
+                        <p style="font-weight: bold;">+</p>
+                        <p>Direitos humanos</p>
+                        <p>Educação</p>
+                        <p>Idosos</p>
+                        <p>Jovens</p>
+                    </div>
+                    <div>
+                        <p>LGBTI+</p>
+                        <p>Meio Ambiente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>
