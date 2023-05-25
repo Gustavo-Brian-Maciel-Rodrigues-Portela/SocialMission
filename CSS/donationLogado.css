@@ -1,1 +1,408 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Midia/imgDonationLogado/fundo.jpg);
+    background-size: cover;
+}
+
+#subCabecalho1 {
+    height: 16.66%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#containerLogo,
+#containerLogo img {
+    height: 70px;
+    width: 70px;
+    margin-left: 25px;
+}
+
+#containerOpcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.opcoes {
+    color: black;
+    font-size: 15px;
+    margin: 15px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.opcoes:hover {
+    color: rgb(93, 141, 105);
+}
+
+#opcaoLogin {
+    border-radius: 10px;
+    background: rgb(93, 141, 105);
+    width: 93px;
+    height: 39px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+
+#opcaoLogin:hover {
+    opacity: 0.7;
+}
+
+.container {
+    width: 100vw;
+}
+
+.corpo {
+    height: 90vh;
+}
+
+.section1 {
+    color: #fff;
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.section2 {
+    background-color: white;
+    color: black;
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 35px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(51, 51, 51);
+    text-shadow: none;
+    margin-top: 50px;
+}
+
+h2 {
+    color: black;
+    font-size: 23px;
+    margin-top: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+h1.destaque~p {
+    background-color: yellow;
+}
+
+.pag {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pag_pix {
+    color: white;
+    text-align: center;
+    background: rgb(93, 141, 105);
+    position: relative;
+    font-size: 13px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 53px 17px;
+    margin: 0;
+}
+
+.pag_bl {
+    color: white;
+    text-align: center;
+    background: rgb(93, 141, 105);
+    position: relative;
+    font-size: 13px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 53px 17px;
+    margin: 0;
+}
+
+#pix {
+    margin-left: 180px;
+}
+
+#pix:focus ~ #Boleto{
+    background-color: #538b61;
+}
+
+#Boleto:focus ~ #pix{
+    background-color: #538b61;
+}
+
+
+.qtd {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.qtd-100,
+.qtd-20,
+.qtd-10,
+.qtd-50,
+.qtd-5 {
+    color: white;
+    text-align: center;
+    background: rgb(43, 97, 69);
+    position: relative;
+    font-size: 13px;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 53px 17px;
+    margin: 0;
+}
+
+.qtd-5:hover {
+    color: white;
+    background: rgb(93, 141, 105);
+}
+
+#qtd-5 {
+    margin-left: 40px;
+}
+
+#qtd-5,
+#qtd-100,
+#qtd-20,
+#qtd-10,
+#qtd-50 {
+    background: rgb(93, 141, 105);
+}
+
+#qtd-5:focus ~ #qtd-100,
+#qtd-5:focus ~ #qtd-20,
+#qtd-5:focus ~ #qtd-10,
+#qtd-5:focus ~ #qtd-50{
+    background-color: #538b61;
+}
+
+#qtd-10:focus ~ #qtd-100,
+#qtd-10:focus ~ #qtd-20,
+#qtd-10:focus ~ #qtd-5,
+#qtd-10:focus ~ #qtd-50{
+    background-color: #538b61;
+}
+
+#qtd-20:focus ~ #qtd-100,
+#qtd-20:focus ~ #qtd-5,
+#qtd-20:focus ~ #qtd-10,
+#qtd-20:focus ~ #qtd-50{
+    background-color: #538b61;
+}
+
+#qtd-50:focus ~ #qtd-100,
+#qtd-50:focus ~ #qtd-20,
+#qtd-50:focus ~ #qtd-10,
+#qtd-50:focus ~ #qtd-5{
+    background-color: #538b61;
+}
+
+#qtd-100:focus ~ #qtd-5,
+#qtd-100:focus ~ #qtd-20,
+#qtd-100:focus ~ #qtd-10,
+#qtd-100:focus ~ #qtd-50{
+    background-color: #538b61;
+}
+
+#donation #EnviarDoacao {
+    border-radius: 7px;
+    border: 1px solid rgb(51, 51, 51);
+    background: rgb(93, 141, 105);
+    height: 35px;
+    width: 35%;
+    color: white;
+}
+
+#Donate {
+    border-radius: 7px;
+    border: 1px solid rgb(51, 51, 51);
+    background: rgb(93, 141, 105);
+    width: 80%;
+    color: white;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-color: rgb(93, 141, 105);
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#Donate:hover{
+    opacity: 0.7;
+}
+
+#politica {
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+#rodape {
+    height: 300px;
+    background-color: rgb(217, 217, 219);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerRodape {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -40px;
+}
+
+#caixaRodape1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-size: 17px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(70, 70, 70);
+    text-shadow: none;
+}
+
+#caixaRodape1 h3 {
+    margin-bottom: 10px;
+}
+
+#caixaRodape1 p {
+    margin: 7px;
+    margin-left: 30px;
+    width: 110px;
+    font-size: 18px;
+}
+
+#caixaRodape2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(70, 70, 70);
+    text-shadow: none;
+}
+
+#caixaRodape2 h3 {
+    margin-bottom: 18px;
+}
+
+.inputTextRodape {
+    height: 43px;
+    width: 250px;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#caixaRodape2 textarea {
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+#submitRodape2 {
+    width: 110px;
+    border-radius: 19px;
+    border-width: 1px;
+    border-color: rgb(51, 51, 51);
+    background: rgb(93, 141, 105);
+    padding: 0px;
+    border-style: solid;
+    color: white;
+    padding: 12px;
+    position: relative;
+    left: 70px;
+    top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+#submitRodape2:hover {
+    opacity: 0.7;
+}
+
+#caixaRodape3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 1;
+    color: rgb(70, 70, 70);
+    text-shadow: none;
+}
+
+#caixaRodape3 h3 {
+    position: relative;
+    top: -7px;
+}
+
+#caixaRodape3 img {
+    width: 350px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+}
+
+#cellCaixaRodape3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    position: relative;
+    top: -10px;
+}
+
+#cellCaixaRodape3 p {
+    margin: 10px;
+}
