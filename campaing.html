@@ -38,93 +38,61 @@
     </header>
 
     <main>
-        <div id="containerTrendingAndCreate">
-            <div style="justify-content: start; margin-left:100px;" class="trendingAndCreate">
-                <img src="Midia/imgCampaing/Screenshot_26.png" alt="Trending">
-                <p>Trending</p>
+        <div id="filterVacanciesBox">
+            <img src="Midia/imgIndex/iconFilter.png" alt="Filter the vacancies">
+            <p>Filter the vacancies</p>
+        </div>
+        <div id="selectFilterVacanciesContainer">
+            <div class="selectFilterVacanciesBox">
+                <h3>Category</h3>
+                <select name="category" class="selectFilterVacancies">
+                    <option value="option1">option1</option>
+                    <option value="option1">option2</option>
+                    <option value="option1">option3</option>
+                </select>
             </div>
-            <div style="justify-content:end; margin-right: 100px;" class="trendingAndCreate">
-                <img src="Midia/imgCampaing/Screenshot_27.png" alt="Create your vacancy">
-                <p>Create your vacancy</p>
+            <div class="selectFilterVacanciesBox">
+                <h3>Age</h3>
+                <select name="age" class="selectFilterVacancies">
+                    <option value="option1">option1</option>
+                    <option value="option1">option2</option>
+                    <option value="option1">option3</option>
+                </select>
             </div>
+            <div class="selectFilterVacanciesBox">
+                <h3>Period</h3>
+                <input type="date" name="" id="">
+            </div>
+            <button>Filter</button>
         </div>
 
-        <div id="containerImgsAndCards">
-            <button id="setaEsquerdaMain" href="">
-                <img src="Midia/imgCampaing/Screenshot_28.png" alt="Seta direcionada para a esquerda">
-            </button>
-            <div id="containerCards">
-                <div class="cards">
-                    <div class="mascaraCards">
-                        <br>
-                        <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
-                        <p style="margin-left: 10px;">Period:</p>
-                        <p> 1 year</p>
-                        <a href="">More...</a>
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="mascaraCards">
-                        <br>
-                        <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
-                        <p style="margin-left: 10px;">Period:</p>
-                        <p> 1 year</p>
-                        <a href="">More...</a>
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="mascaraCards">
-                        <br>
-                        <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
-                        <p style="margin-left: 10px;">Period:</p>
-                        <p> 1 year</p>
-                        <a href="">More...</a>
-                    </div>
-                </div>
-            </div>
-            <button id="setaDireitaMain" href="">
-                <img src="Midia/imgCampaing/Screenshot_29.png" alt="Seta direcionada para a direita">
-            </button>
+        <div id="trandingBox">
+            <img src="Midia/imgIndex/setinha.png" alt="Trending">
+            <p>Trending</p>
         </div>
 
+        <div id="trendingContainer">
+            <div id="mascaraTrending">
+                <img id="trendingSetaEsquerda" src="Midia/imgIndex/setaEsquerda.png" alt="Seta para a esquerda">
+                <div id="trendingBox">
+                    <h3>Name:</h3>
+                    <h1>VETERINARIO PARA SAPO</h1>
+                    <h3>Description</h3>
+                    <p>Sapinhos machucados. Precisa-se de médico bom</p>
+                    <h3>Period:</h3>
+                    <p>Até os sapinhos morrerem</p>
+                </div>
+                <img id="trendingSetaDireita" src="Midia/imgIndex/setaDireita.png" alt="">
+            </div>
+        </div>
         <div id="vacancies">
-            <img src="Midia/imgCampaing/Screenshot_30.png" alt="Vacancies">
+            <img src="Midia/imgIndex/setinha.png" alt="vacancies">
             <p>Vacancies</p>
         </div>
 
-        <div id="containerOpcoesVacancies">
-            <div id="opcoesVacancies">
-                <img src="Midia/imgCampaing/Screenshot_31.png" alt="opções">
-                <div class="caixaSelect">
-                    <label for="select1">Category</label>
-                    <select id="select1">
-                        <option value="option1">option 1</option>
-                        <option value="option2">option 2</option>
-                        <option value="option3">option 3</option>
-                    </select>
-                </div>
-                <div class="caixaSelect">
-                    <label for="select2">Age</label>
-                    <select id="select2">
-                        <option value="option1">option 1</option>
-                        <option value="option2">option 2</option>
-                        <option value="option3">option 3</option>
-                    </select>
-                </div>
-                <div class="caixaSelect">
-                    <label for="data">Period</label>
-                    <input id="data" type="date">
-                </div>
-                <button id="botaoVacancies">Filter</button>
-            </div>
-        </div>
-
-        <div id="linhasCards">
-            <div class="colunasCards">
-                <div class="cards">
+        <div id="vacanciesEndContainer">
+            <div class="vacanciesEndBox">
+                <div class="cards" id="bixoVermelho">
                     <div class="mascaraCards">
                         <br>
                         <p style="margin-left: 10px;">Name:</p>
@@ -134,92 +102,61 @@
                         <a href="">More...</a>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards" id="pingu">
                     <div class="mascaraCards">
                         <br>
                         <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
+                        <p> Artesanato por amor</p>
                         <p style="margin-left: 10px;">Period:</p>
-                        <p> 1 year</p>
+                        <p> 50 years</p>
                         <a href="">More...</a>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards" id="macarraoEmChamas">
                     <div class="mascaraCards">
                         <br>
                         <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
+                        <p> Mestre cuca</p>
                         <p style="margin-left: 10px;">Period:</p>
-                        <p> 1 year</p>
+                        <p> 5 minutes</p>
                         <a href="">More...</a>
                     </div>
                 </div>
             </div>
-            <div class="colunasCards">
-                <div class="cards">
+            <div class="vacanciesEndBox">
+                <div class="cards" id="burro">
                     <div class="mascaraCards">
                         <br>
                         <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
+                        <p> Enfermeira veterinaria</p>
                         <p style="margin-left: 10px;">Period:</p>
                         <p> 1 year</p>
                         <a href="">More...</a>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards" id="ratinho">
                     <div class="mascaraCards">
                         <br>
                         <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
+                        <p> Cabelereiro</p>
                         <p style="margin-left: 10px;">Period:</p>
-                        <p> 1 year</p>
+                        <p> 6 years</p>
                         <a href="">More...</a>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards" id="caco">
                     <div class="mascaraCards">
                         <br>
                         <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
+                        <p> Coveiro para sapinhos</p>
                         <p style="margin-left: 10px;">Period:</p>
-                        <p> 1 year</p>
-                        <a href="">More...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="colunasCards">
-                <div class="cards">
-                    <div class="mascaraCards">
-                        <br>
-                        <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
-                        <p style="margin-left: 10px;">Period:</p>
-                        <p> 1 year</p>
-                        <a href="">More...</a>
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="mascaraCards">
-                        <br>
-                        <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
-                        <p style="margin-left: 10px;">Period:</p>
-                        <p> 1 year</p>
-                        <a href="">More...</a>
-                    </div>
-                </div>
-                <div class="cards">
-                    <div class="mascaraCards">
-                        <br>
-                        <p style="margin-left: 10px;">Name:</p>
-                        <p> Animador de festas infantis</p>
-                        <p style="margin-left: 10px;">Period:</p>
-                        <p> 1 year</p>
+                        <p> 9 years</p>
                         <a href="">More...</a>
                     </div>
                 </div>
             </div>
         </div>
+        <button id="seeMore">See more...</button>
     </main>
 
     <footer id="rodape">
