@@ -547,3 +547,19 @@
 #cellCaixaRodape3 p {
     margin: 10px;
 }
+
+.imagem1 {
+    background-image: url('../Midia/imgCampaing/caco.jpg');
+}
+
+.imagem2 {
+    background-image: url('../Midia/imgCampaing/burro.jpg');
+}
+
+.imagem3 {
+    background-image: url('../Midia/imgCampaing/pingu.jpg');
+}
+
+.imagem4 {
+    background-image: url('../Midia/imgCampaing/ratinho.jpg');
+}
