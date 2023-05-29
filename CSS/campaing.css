@@ -386,8 +386,8 @@
 
 #seeMore {
     position: relative;
-    left: 45%;
-    top: 100%;
+    left: 50%;
+    top: 97%;
     font-size: 27px;
     font-family: "Source Sans Pro", sans-serif;
     text-align: left;
@@ -402,6 +402,7 @@
     cursor: pointer;
     transition: 0.4s ease;
     background: none;
+    transform: translateX(-50%);
 }
 
 #seeMore:hover {
