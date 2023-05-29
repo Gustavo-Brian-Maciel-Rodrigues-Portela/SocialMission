@@ -23,3 +23,5 @@ function alterarTela2() {
         telaTrending.style.backgroundImage = "url('../Midia/imgCampaing/pingu.jpg')";
     }
 }
+
+console.log(telaTrending.style.backgroundImage.indexOf('caco.jpg'))
