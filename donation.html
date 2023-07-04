@@ -8,24 +8,44 @@
   <link rel="stylesheet" href="CSS/donation.css">
   <link rel="icon" type="image/x-icon" href="Midia/imgDonation/logo.jpeg">
   <title>Soccial Mission - Doação</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
 <body>
 
   <!--Cabecalho-->
   <header id="cabecalho">
-    <div id="subCabecalho1">
-      <div id="containerLogo">
-        <img src="Midia/imgIndex/logo.png" alt="logoDoSite">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="Midia/imgIndex/logo.png" alt="logoDoSite" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rodape">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="campaing.html">Campaing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="donation.html">Donations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" id="opcaoLogin">Login</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div id="containerOpcoes">
-        <a class="opcoes" href="index.html">Home</a>
-        <a class="opcoes" href="#rodape" >Contact</a>
-        <a class="opcoes" href="campaing.html" >campaing</a>
-        <a class="opcoes" href="donation.html">Donations</a>
-        <a class="opcoes" href="login.html" id="opcaoLogin">Login</a>
-      </div>
-    </div>
+    </nav>
   </header>
   <br>
   <!--Corpo-->
@@ -34,48 +54,47 @@
       <img src="Midia/imgDonation/logo.jpeg" alt="" height="75%" width="75%">
     </section>
 
-    <section class="section2">
-      <div id="donation">
-        <h1><strong>Donation</strong></h1>
-
-        <h2>Payment Method: </h2>
-
-        <div class="pag">
-          <button class="pag_pix" type="button" id="pix">Pix</button>
-          <button class="pag_bl" type="button" id="Boleto">Boleto</button>
+    <div class="container">
+      <section class="section2">
+        <div id="donation">
+          <div class="responsive-donate">
+            <h1><strong>Donation</strong></h1>
+  
+            <h2>Payment Method: </h2>
+            <div class="pag">
+              <button class="pag_pix" type="button" id="pix">Pix</button>
+              <button class="pag_bl" type="button" id="Boleto">Boleto</button>
+            </div>
+  
+            <h2>Quantity: </h2>
+            <div class="qtd">
+              <button class="qtd-5" type="button" id="qtd-5">R$ 5</button>
+              <button class="qtd-10" type="button" id="qtd-10">R$ 10</button>
+              <button class="qtd-20" type="button" id="qtd-20">R$ 20</button>
+              <button class="qtd-50" type="button" id="qtd-50">R$ 50</button>
+              <button class="qtd-100" type="button" id="qtd-100">R$ 100</button>
+            </div>
+  
+            <br><br>
+  
+            <button id="Donate">Donate</button>
+  
+            <p class="politica">
+              Ao preencher o formulário, você está aceitando os termos de nossa Política de Privacidade. Suas informações permanecerão
+            </p>
+            <p class="politica">
+              confidenciais e poderão ser usadas para mantê-lo informado sobre nosso trabalho e para pedir sua ajuda em nossa missão de dar
+            </p>
+            <p class="politica">
+              uma vida melhor para os funcionários dessa empresa. Nosso contato poderá ser feito, inclusive, por meio de notificações via
+            </p>
+            <p class="politica">
+              e-mail, SMS e WhatsApp.
+            </p>
+          </div>
         </div>
-
-
-        <h2>Quantity: </h2>
-        <div class="qtd">
-          <button class="qtd-5" type="button" id="qtd-5">R$ 5</button>
-          <button class="qtd-10" type="button" id="qtd-10">R$ 10</button>
-          <button class="qtd-20" type="button" id="qtd-20">R$ 20</button>
-          <button class="qtd-50" type="button" id="qtd-50">R$ 50</button>
-          <button class="qtd-100" type="button" id="qtd-100">R$ 100 </button>
-        </div>
-
-        <br><br>
-
-        <button id="Donate">Donate</button>
-
-        <p id="politica">
-          Ao preencher o formulário, você está aceitando os termos de nossa Politicas de Privacidade. Suas informações
-          permanecerao
-        </p>
-        <p id="politica">
-          confidenciais e poderao ser usadas para mante-lo informado sobre nosso trabalho e para pedir sua ajudar em
-          nossa missão de dar
-        </p>
-        <p id="politica">
-          uma vida melhor para os funcionarios dessa empresa. Nosso contato poderá ser feito, inclucive, por meio de
-          notificações via
-        </p>
-        <p id="politica">
-          e-mal, SMS e Whatsapp.
-        </p>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
   <br>
 
@@ -120,6 +139,16 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
