@@ -10,6 +10,37 @@ body {
     background-size: cover;
 }
 
+/*cabeçalho*/
+.logo-img {
+    max-height: 50px;
+}
+
+@media (min-width: 576px) {
+    .logo-img {
+        max-height: 30px;
+    }
+    
+    .section1{
+        text-align: center;
+        position: relative;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #home {
+        margin-left: 900px;
+    }
+
+    .row {
+        justify-content: right;
+    }
+
+    
+
+
+}
+
 #subCabecalho1 {
     height: 16.66%;
     background-color: white;
@@ -31,7 +62,11 @@ body {
     flex-direction: row;
     align-items: center;
     margin-right: 30px;
+    margin-left: 5opx;
 }
+
+
+
 
 .opcoes {
     color: black;
@@ -80,14 +115,6 @@ body {
     float: left;
 }
 
-.section2 {
-    background-color: white;
-    color: black;
-    width: 40%;
-    height: 90vh;
-    display: flex;
-    border-radius: 15px;
-}
 
 h1 {
     font-size: 35px;
@@ -152,11 +179,11 @@ h1.destaque~p {
     margin-left: 180px;
 }
 
-#pix:focus ~ #Boleto{
+#pix:focus~#Boleto {
     background-color: #538b61;
 }
 
-#Boleto:focus ~ #pix{
+#Boleto:focus~#pix {
     background-color: #538b61;
 }
 
@@ -203,38 +230,38 @@ h1.destaque~p {
     background: rgb(93, 141, 105);
 }
 
-#qtd-5:focus ~ #qtd-100,
-#qtd-5:focus ~ #qtd-20,
-#qtd-5:focus ~ #qtd-10,
-#qtd-5:focus ~ #qtd-50{
+#qtd-5:focus~#qtd-100,
+#qtd-5:focus~#qtd-20,
+#qtd-5:focus~#qtd-10,
+#qtd-5:focus~#qtd-50 {
     background-color: #538b61;
 }
 
-#qtd-10:focus ~ #qtd-100,
-#qtd-10:focus ~ #qtd-20,
-#qtd-10:focus ~ #qtd-5,
-#qtd-10:focus ~ #qtd-50{
+#qtd-10:focus~#qtd-100,
+#qtd-10:focus~#qtd-20,
+#qtd-10:focus~#qtd-5,
+#qtd-10:focus~#qtd-50 {
     background-color: #538b61;
 }
 
-#qtd-20:focus ~ #qtd-100,
-#qtd-20:focus ~ #qtd-5,
-#qtd-20:focus ~ #qtd-10,
-#qtd-20:focus ~ #qtd-50{
+#qtd-20:focus~#qtd-100,
+#qtd-20:focus~#qtd-5,
+#qtd-20:focus~#qtd-10,
+#qtd-20:focus~#qtd-50 {
     background-color: #538b61;
 }
 
-#qtd-50:focus ~ #qtd-100,
-#qtd-50:focus ~ #qtd-20,
-#qtd-50:focus ~ #qtd-10,
-#qtd-50:focus ~ #qtd-5{
+#qtd-50:focus~#qtd-100,
+#qtd-50:focus~#qtd-20,
+#qtd-50:focus~#qtd-10,
+#qtd-50:focus~#qtd-5 {
     background-color: #538b61;
 }
 
-#qtd-100:focus ~ #qtd-5,
-#qtd-100:focus ~ #qtd-20,
-#qtd-100:focus ~ #qtd-10,
-#qtd-100:focus ~ #qtd-50{
+#qtd-100:focus~#qtd-5,
+#qtd-100:focus~#qtd-20,
+#qtd-100:focus~#qtd-10,
+#qtd-100:focus~#qtd-50 {
     background-color: #538b61;
 }
 
@@ -260,7 +287,8 @@ h1.destaque~p {
     margin-left: 50px;
     margin-top: 10px;
 }
-#Donate:hover{
+
+#Donate:hover {
     opacity: 0.7;
 }
 
@@ -405,4 +433,59 @@ h1.destaque~p {
 
 #cellCaixaRodape3 p {
     margin: 10px;
+}
+
+.containersection2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.section2 {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.responsive-donate {
+    display: inline-block;
+    max-width: 500px;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.pag button,
+.qtd button {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.qtd {
+    margin-bottom: 20px;
+}
+
+#Donate {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.politica {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #555;
 }
