@@ -1,56 +1,374 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
 
 #cabecalho {
-    height: 13%;
-    width: 100%;
+  height: 72px;
+  width: 99.9%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.73);
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#logo1 {
+  height: 85%;
+  margin-left: 30px;
+}
+
+#containerBotaoCabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 40px;
+}
+
+.botaoCabecalho {
+  margin: 12px;
+  border: none;
+  position: relative;
+  font-size: 1em;
+  transition: 0.2s;
+  text-decoration: none;
+  color: black;
+}
+
+.botaoCabecalho:hover {
+  cursor: pointer;
+  color: rgb(80, 177, 123);
+}
+
+#botaoLogin {
+  background-color: rgb(89, 139, 108);
+  color: white;
+  padding: 11px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#botaoLogin:hover {
+  background-color: rgb(155, 192, 157);
+}
+
+#secao1 {
+  height: 87%;
+  width: 50%;
+  position: absolute;
+  top: 13%;
+  background-color: rgba(216, 236, 236, 0.753);
+  border-color: rgb(255, 255, 255);
+  box-shadow: black;
+}
+
+#containerLogin {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+}
+
+#tituloLogin {
+  font-size: 46px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: rgb(51, 51, 51);
+  text-shadow: none;
+  margin-bottom: 20px;
+}
+
+.caixaLogin {
+  width: 400px;
+  margin: 13px;
+}
+
+.caixaLogin input {
+  width: 100%;
+  height: 45px;
+  border-radius: 50px;
+  border-style: solid;
+  padding: 5px;
+  font-size: 17px;
+}
+
+.caixaLogin label {
+  font-size: 22px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: rgb(51, 51, 51);
+  text-shadow: none;
+}
+
+.caixaLogin a {
+  text-decoration: none;
+  color: blue;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+#submit {
+  border-radius: 22px;
+  border-width: 1px;
+  border-color: rgb(51, 51, 51);
+  background: rgb(93, 141, 105);
+  height: 50px;
+  width: 120px;
+  margin: 20px;
+  border-style: solid;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#submit:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+#secao2 {
+  height: 87%;
+  width: 55%;
+  position: absolute;
+  top: 13%;
+  left: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    45deg,
+    rgb(120, 212, 120),
+    rgb(137, 212, 180)
+  );
+  opacity: 0.8;
+}
+
+#logo2 {
+  height: 100%;
+}
+
+@media (max-width: 760px) {
+  #cabecalho {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  #botaoLogin {
+    width: 20%;
+    height: 32px;
+    font-size: 12px;
+    padding: 8px;
+  }
+  #sobre {
+    white-space: nowrap;
+  }
+  #secao1 {
+    height: 87%;
+    width: 50%;
+    position: flex;
+    top: 13%;
+    background-color: rgba(216, 236, 236, 0.753);
+    border-color: rgb(255, 255, 255);
+    box-shadow: black;
+  }
+  #tituloLogin {
+    font-size: 22px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 50px;
+  }
+  .caixaLogin {
+    width: 150px;
+    font-size: 10px;
+  }
+  #emailTitulo {
+    font-size: 15px;
+    margin-left: 8px;
+    font-weight: bold;
+  }
+  #email {
+    font-size: 12px;
+    height: 32px;
+  }
+  #passTitulo {
+    font-size: 15px;
+    margin-left: 8px;
+    font-weight: bold;
+  }
+  #password {
+    font-size: 12px;
+    height: 35px;
+  }
+  #esquceu {
+    margin-left: 8px;
+    font-size: 10px;
+  }
+  #submit {
+    font-size: 12px;
+    width: 35%;
+    height: 35px;
+  }
+  #submit:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 15px;
+  }
+  #secao2 {
+    width: 55%;
+  }
+  #logo2 {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 762px) and (max-width: 1010px) {
+  #cabecalho {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  #sobre {
+    white-space: nowrap;
+  }
+
+  #botaoLogin {
+    width: 25%;
+    height: 36px;
+    font-size: 15px;
+    padding: 10px;
+  }
+  #secao1 {
+    height: 87%;
+    width: 50%;
+    position: flex;
+    top: 13%;
+    background-color: rgba(216, 236, 236, 0.753);
+    border-color: rgb(255, 255, 255);
+    box-shadow: black;
+  }
+  #tituloLogin {
+    font-size: 30px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 50px;
+  }
+  .caixaLogin {
+    width: 250px;
+    font-size: 18px;
+  }
+  #emailTitulo {
+    font-size: 20px;
+    margin-left: 8px;
+    font-weight: bold;
+  }
+  #email {
+    font-size: 15px;
+    height: 32px;
+  }
+  #passTitulo {
+    font-size: 20px;
+    margin-left: 8px;
+    font-weight: bold;
+  }
+  #password {
+    font-size: 15px;
+    height: 35px;
+  }
+  #esquceu {
+    margin-left: 8px;
+    font-size: 15px;
+  }
+  #submit {
+    font-size: 15px;
+    width: 42%;
+    height: 45px;
+  }
+  #submit:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 15px;
+    background-color: rgba(58, 146, 91, 0.753);
+    color: darkgreen;
+  }
+  #secao2 {
+    width: 55%;
+  }
+  #logo2 {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (min-width: 1011px) {
+  #cabecalho {
+    height: 72px;
+    width: 99.9%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: rgba(255, 255, 255, 0.73);
-    box-shadow: 1px 20px 40px black;
     font-family: sans-serif;
     font-size: 16px;
-}
+  }
 
-#logo1 {
+  #logo1 {
     height: 85%;
     margin-left: 30px;
-}
+  }
 
-#containerBotaoCabecalho {
+  #containerBotaoCabecalho {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     margin-right: 40px;
-}
+  }
 
-.botaoCabecalho {
-    margin: 0 15px;
+  .botaoCabecalho {
+    margin: 12px;
     border: none;
     position: relative;
     font-size: 1em;
     transition: 0.2s;
     text-decoration: none;
     color: black;
-}
+  }
 
-.botaoCabecalho:hover {
+  .botaoCabecalho:hover {
     cursor: pointer;
     color: rgb(80, 177, 123);
-}
+  }
 
-#botaoLogin {
+  #botaoLogin {
     background-color: rgb(89, 139, 108);
     color: white;
     padding: 11px 30px;
@@ -58,36 +376,36 @@ body {
     transition: 0.5s;
     font-weight: 700;
     text-decoration: none;
-}
+  }
 
-#botaoLogin:hover {
+  #botaoLogin:hover {
     background-color: rgb(155, 192, 157);
-}
+  }
 
-#secao1 {
+  #secao1 {
     height: 87%;
-    width: 45%;
+    width: 50%;
     position: absolute;
     top: 13%;
     background-color: rgba(216, 236, 236, 0.753);
     border-color: rgb(255, 255, 255);
     box-shadow: black;
-}
+  }
 
-#containerLogin {
+  #containerLogin {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+  }
 
-form {
+  form {
     height: 100%;
     width: 100%;
-}
+  }
 
-#tituloLogin {
+  #tituloLogin {
     font-size: 46px;
     font-family: "Arial Black", Gadget, sans-serif;
     text-align: left;
@@ -96,23 +414,28 @@ form {
     color: rgb(51, 51, 51);
     text-shadow: none;
     margin-bottom: 20px;
-}
-
-.caixaLogin {
+  }
+  #emailTitulo {
+    margin-left: 8px;
+  }
+  .caixaLogin {
     width: 400px;
     margin: 13px;
-}
+  }
+  #passTitulo {
+    margin-left: 8px;
+  }
 
-.caixaLogin input {
+  .caixaLogin input {
     width: 100%;
     height: 45px;
     border-radius: 50px;
     border-style: solid;
     padding: 5px;
     font-size: 17px;
-}
+  }
 
-.caixaLogin label {
+  .caixaLogin label {
     font-size: 22px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: left;
@@ -120,16 +443,16 @@ form {
     line-height: 1;
     color: rgb(51, 51, 51);
     text-shadow: none;
-}
+  }
 
-.caixaLogin a {
+  .caixaLogin a {
     text-decoration: none;
     color: blue;
     font-family: sans-serif;
     font-size: small;
-}
+  }
 
-#submit {
+  #submit {
     border-radius: 22px;
     border-width: 1px;
     border-color: rgb(51, 51, 51);
@@ -147,15 +470,18 @@ form {
     justify-content: center;
     font-family: sans-serif;
     text-decoration: none;
-}
+  }
 
-#submit:hover {
+  #submit:hover {
     cursor: pointer;
     opacity: 0.7;
     font-size: 18px;
-}
+  }
+  #esquceu {
+    margin-left: 8px;
+  }
 
-#secao2 {
+  #secao2 {
     height: 87%;
     width: 55%;
     position: absolute;
@@ -164,10 +490,15 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(45deg, rgb(120, 212, 120), rgb(137, 212, 180));
+    background-image: linear-gradient(
+      45deg,
+      rgb(120, 212, 120),
+      rgb(137, 212, 180)
+    );
     opacity: 0.8;
-}
+  }
 
-#logo2 {
+  #logo2 {
     height: 100%;
+  }
 }
