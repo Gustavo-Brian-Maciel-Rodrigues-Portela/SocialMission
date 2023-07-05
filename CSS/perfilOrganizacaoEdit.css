@@ -1,67 +1,67 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    min-height: 100vh;
-    width: 100%;
-    background: white;
-    opacity: (1.5);
+  min-height: 100vh;
+  width: 100%;
+  background: white;
+  opacity: (1.5);
 }
 
 .tudo {
-    width: 100%;
-    align-self: center;
+  width: 100%;
+  align-self: center;
 }
 
 #cabecalho {
-    height: 72px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.73);
-    font-family: sans-serif;
-    font-size: 16px;
+  height: 72px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.73);
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
 #logo1 {
-    height: 85%;
-    margin-left: 30px;
+  height: 85%;
+  margin-left: 30px;
 }
 
 #containerBotaoCabecalho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 40px;
 }
 
 .botaoCabecalho {
-    margin: 0 15px;
-    border: none;
-    position: relative;
-    font-size: 1em;
-    transition: 0.2s;
-    text-decoration: none;
-    color: black;
+  margin: 0 15px;
+  border: none;
+  position: relative;
+  font-size: 1em;
+  transition: 0.2s;
+  text-decoration: none;
+  color: black;
 }
 
 .botaoCabecalho:hover {
-    cursor: pointer;
-    color: rgb(80, 177, 123);
+  cursor: pointer;
+  color: rgb(80, 177, 123);
 }
 
 #botaoPerfil {
-    color: white;
-    padding: 11px 30px;
-    border-radius: 10px;
-    transition: 0.5s;
-    font-weight: 700;
-    text-decoration: none;
+  color: white;
+  padding: 11px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* ----------------------------------------- fim cabecalho --------------------------------------------*/
@@ -69,41 +69,928 @@ body {
 /* ------------------------------------------ inicio corpo ------------------------------------------- */
 
 .backgorundPerfil {
+  box-sizing: border-box;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.164);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  outline: revert;
+}
+
+#containerFormEditarBackground {
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: 20px;
+  right: 20px;
+}
+
+#iconEditarBackgorund {
+  height: 31px;
+  width: 31px;
+}
+
+.fotoPerfil {
+  margin-top: 90px;
+  width: 343px;
+  height: 341px;
+}
+
+.institutionName {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+  width: 100%;
+  align-items: center;
+}
+
+.institutionName h1 {
+  margin-top: 130px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#containerFormEditarNome {
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: 132px;
+  margin-left: 250px;
+}
+
+#iconEditarNome {
+  height: 24px;
+  width: 21px;
+}
+
+.sobre {
+  height: 400px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#boxSobre {
+  width: 88%;
+  height: 220px;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  border-radius: 22px;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.336) 0px 0px 73px;
+}
+
+.sobre h1 {
+  margin: 20px;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+#containerFormEditarSobre {
+  display: flex;
+  width: auto;
+  height: 40px;
+  position: absolute;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 120px;
+}
+
+#iconEditarSobre {
+  height: 24px;
+  width: 21px;
+}
+
+.sobre p {
+  margin-top: 10px;
+  margin: 20px;
+  margin-bottom: 40px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.contato {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  flex-direction: column;
+  align-self: center;
+}
+
+.contato h1 {
+  font-size: 30px;
+  margin-left: 125px;
+  text-align: left;
+}
+
+#containerFormEditarContato {
+  box-sizing: border-box;
+  display: flex;
+  width: auto;
+  height: 40px;
+  position: absolute;
+  flex-direction: column;
+  left: 250px;
+  margin-top: 5px;
+}
+
+#iconEditarContato {
+  height: 24px;
+  width: 21px;
+}
+
+.infos {
+  box-sizing: border-box;
+  width: 98%;
+  padding: 60px;
+  justify-content: space-evenly;
+  align-self: center;
+  display: flex;
+}
+
+.infos h1 {
+  width: 100px;
+  margin: 10px;
+  font-size: 28px;
+  align-self: center;
+  text-align: left;
+}
+
+.infos h2 {
+  width: 200px;
+  margin: 10px;
+  margin-top: 5px;
+  align-self: center;
+  text-align: left;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.linha {
+  margin: auto;
+  width: 95%;
+  height: 1px;
+  color: black;
+  background-color: black;
+  align-self: center;
+}
+
+.vagas {
+  box-sizing: border-box;
+  display: inline-flex;
+  width: 100%;
+  height: 100px;
+}
+
+.vagas h1 {
+  font-size: 30px;
+  margin-left: 125px;
+  margin-top: 90px;
+  text-align: left;
+}
+
+#containerFormEditarVagas {
+  box-sizing: border-box;
+  display: flex;
+  width: auto;
+  height: 40px;
+  position: absolute;
+  flex-direction: column;
+  left: 270px;
+  margin-top: 92px;
+}
+
+#iconEditarVagas {
+  height: 24px;
+  width: 21px;
+}
+
+.boxes {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+
+.card {
+  margin-top: -200px;
+  box-sizing: border-box;
+  width: 20%;
+  height: 300px;
+  border-radius: 22px;
+}
+
+#imgCard {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#palhaco {
+  border-style: unset;
+  border-radius: 22px;
+  height: auto;
+  border: 1px solid black;
+}
+
+#cuidaCachorro {
+  border-style: unset;
+  border-radius: 22px;
+  height: auto;
+  border: 1px solid black;
+}
+
+#adestrador {
+  border-style: unset;
+  border-radius: 22px;
+  height: auto;
+  border: 1px solid black;
+}
+
+#textoCard {
+  box-sizing: border-box;
+  margin-top: -30px;
+  border-radius: 32px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.864);
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.336) 0px 0px 73px;
+}
+
+.card h1 {
+  font-size: 15px;
+  text-align: left;
+}
+
+.card p {
+  text-align: left;
+}
+
+#more {
+  font-size: 12px;
+  text-align: right;
+}
+
+/* ------------------------------------------- fim corpo ---------------------------------------------- */
+
+/* ----------------------------------------- inicio rodape -------------------------------------------- */
+
+#rodape {
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px -39px 43px;
+  height: 100%;
+  background-color: #d6dbde;
+  display: flex;
+}
+
+.containerRodape {
+  margin-top: 40px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+#caixaRodape1 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+  line-height: 1;
+  color: rgb(70, 70, 70);
+}
+
+#caixaRodape1 h1 {
+  font-size: 20px;
+}
+
+#caixaRodape1 p {
+  margin: 7px;
+  margin-left: 30px;
+  width: 130px;
+  text-align: left;
+  font-size: 15px;
+}
+
+#caixaRodape2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: rgb(70, 70, 70);
+  text-shadow: none;
+}
+
+#caixaRodape2 h1 {
+  text-align: left;
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+.inputTextRodape {
+  height: 43px;
+  width: 306.4px;
+  padding: 3px 5px;
+  margin-bottom: 10px;
+  font-size: 17px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#caixaRodape2 textarea {
+  font-size: 17px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#submitRodape2 {
+  width: 110px;
+  border-radius: 19px;
+  border-width: 1px;
+  border-color: rgb(51, 51, 51);
+  background: rgb(93, 141, 105);
+  padding: 0px;
+  border-style: solid;
+  color: white;
+  padding: 12px;
+  position: relative;
+  left: 90px;
+  top: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+#submitRodape2:hover {
+  opacity: 0.7;
+}
+
+#caixaRodape3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: left;
+  letter-spacing: 0px;
+  line-height: 1;
+  color: rgb(70, 70, 70);
+  text-shadow: none;
+}
+
+#caixaRodape3 h1 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+#caixaRodape3 img {
+  width: 350px;
+  position: relative;
+  left: 10px;
+  top: -5px;
+}
+
+#cellCaixaRodape3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  position: relative;
+  top: -10px;
+}
+
+#cellCaixaRodape3 p {
+  margin: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 760px) {
+  #cabecalho {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #containerBotaoCabecalho {
+    display: inline-flex;
+    font-size: 12.5px;
+    align-items: center;
+  }
+  .backgorundPerfil {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.17);
+    height: 250px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+  #iconEditarBackgorund {
+    max-width: 50%;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin-left: 28%;
+    justify-self: center;
+  }
+  .fotoPerfil {
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .imgPerfil {
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 220px;
+    width: auto;
+    height: auto;
+    padding-left: 18%;
+    justify-self: center;
+  }
+  .institutionName h1 {
+    margin-left: -5px;
+    margin-top: 90px;
+    font-size: 20px;
+  }
+  #containerFormEditarNome {
+    margin-top: 95px;
+  }
+  #iconEditarNome {
+    margin-top: -20px;
+    max-width: 40%;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin-left: 18%;
+    justify-self: center;
+  }
+  .sobre {
+    margin-top: -28px;
+  }
+  .sobre h1 {
+    font-size: 18px;
+  }
+  #containerFormEditarSobre {
+    margin-left: 110px;
+  }
+  #iconEditarSobre {
+    max-width: 35%;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin-left: -5%;
+    margin-top: 0.99px;
+  }
+  .sobre p {
+    font-size: 12px;
+  }
+
+  .contato h1 {
+    font-size: 22px;
+    justify-content: space-between;
+    width: 150px;
+    margin-left: 50px;
+  }
+  #containerFormEditarContato {
+    margin-left: -90px;
+    margin-top: -0.2px;
+  }
+  #iconEditarContato {
+    max-width: 40%;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin-left: -5%;
+    margin-top: 4px;
+  }
+  #tel h1 {
+    margin-left: 1px;
+    font-size: 18px;
+  }
+  #email h1 {
+    margin-left: 1px;
+    font-size: 18px;
+  }
+  .vagas h1 {
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  #containerFormEditarVagas {
+    margin-left: -90px;
+  }
+  #iconEditarVagas {
+    max-width: 40%;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin-top: 2px;
+  }
+
+  .boxes {
+    display: inline;
+    background-color: blueviolet;
+  }
+  .card {
+    max-width: 100%;
+    max-height: 150px;
+    display: inline;
+    width: auto;
+    height: auto;
+    background-color: blueviolet;
+  }
+  #palhaco {
+    margin-left: 30%;
+    max-width: 40%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+  }
+  #textoCard {
+    margin-left: 30%;
+    max-width: 40%;
+    max-height: 230px;
+    width: 260px;
+    height: auto;
+  }
+
+  #cuidaCachorro {
+    margin-left: 30%;
+    max-width: 40%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+  }
+  #adestrador {
+    margin-left: 30%;
+    max-width: 40%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  #rodape {
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    display: inline;
+    margin-top: 40px;
+  }
+  .containerRodape {
+    background-color: #d6dbde;
+    align-items: center;
+  }
+  #caixaRodape1 h1 {
+    color: darkgreen;
+    align-self: center;
+  }
+  #caixaRodape1 {
+    align-items: center;
+    display: inline-flex;
+  }
+  #caixaRodape2 {
+    display: flex;
+    justify-content: center;
+  }
+  #caixaRodape2 h1 {
+    text-align: center;
+    color: darkgreen;
+  }
+  #caixaRodape3 {
+    align-items: center;
+    display: grid;
+  }
+  #caixaRodape3 h1 {
+    text-align: center;
+    color: darkgreen;
+  }
+  .inputTextRodape {
+    height: 25px;
+  }
+}
+
+@media (min-width: 762px) and (max-width: 1010px) {
+  #cabecalho {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #containerBotaoCabecalho {
+    display: inline-flex;
+    font-size: 16px;
+    align-items: center;
+  }
+  .backgorundPerfil {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.17);
+    height: 250px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+  #iconEditarBackgorund {
+    max-width: 60%;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin-left: 28%;
+    justify-self: center;
+  }
+  .fotoPerfil {
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  .imgPerfil {
+    max-width: 100%;
+    max-height: 310px;
+    width: auto;
+    height: auto;
+    padding-left: 8%;
+    justify-self: center;
+  }
+  .institutionName h1 {
+    font-size: 26px;
+  }
+  .sobre {
+    margin-top: -28px;
+  }
+  .sobre h1 {
+    font-size: 24px;
+  }
+
+  #iconEditarSobre {
+    max-width: 35%;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 5px;
+  }
+  .sobre p {
+    font-size: 18px;
+  }
+
+  .contato h1 {
+    font-size: 25px;
+    justify-content: space-between;
+    width: 150px;
+    margin-left: 50px;
+    
+  }
+  #containerFormEditarContato {
+    margin-left: -90px;
+    margin-top: -0.2px;
+  }
+  #iconEditarContato {
+    max-width: 45%;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin-left: -5%;
+    margin-top: 4px;
+  }
+  #tel h1 {
+    margin-left: 1px;
+    font-size: 22px;
+  }
+  #email h1 {
+    margin-left: 1px;
+    font-size: 22px;
+  }
+
+  .boxes {
+    height: 400px;
+    align-items: center;
+    display: flex;
+  }
+  .vagas h1 {
+    font-size: 26px;
+    margin-left: 50px;
+  }
+  #containerFormEditarVagas {
+    margin-left: -90px;
+  }
+  #iconEditarVagas {
+    max-width: 48%;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    margin-top: 2px;
+  }
+  .card {
+    margin-left: 60px;
+    max-width: 100%;
+    max-height: 460px;
+    display: inline;
+    width: auto;
+    height: auto;
+  }
+  #palhaco {
+    max-width: 60%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin-top: 130px;
+  }
+  #textoCard {
+    max-width: 61%;
+    max-height: 230px;
+    width: auto;
+    height: auto;
+  }
+  #cuidaCachorro {
+    max-width: 60%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin-top: 130px;
+  }
+  #adestrador {
+    max-width: 60%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    margin-top: 130px;
+  }
+
+  #rodape {
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+    margin-left: -10px;
+  }
+  .containerRodape {
+    background-color: #d6dbde;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  #caixaRodape1 h1 {
+    margin-top: 5px;
+    color: darkgreen;
+    align-self: center;
+    margin-bottom: 30px;
+  }
+  #caixaRodape1 {
+    align-items: center;
+    display: inline-flex;
+  }
+  #caixaRodape2 {
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  #caixaRodape2 h1 {
+    margin-top: -25px;
+    text-align: center;
+    color: darkgreen;
+    margin-bottom: 30px;
+  }
+  .inputTextRodape {
+    margin-top: 2px;
+    height: 10px;
+    width: 250px;
+    height: 60px;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  #texto {
+    width: 260px;
+    height: 60px;
+  }
+
+  #caixaRodape3 {
+    justify-content: center;
+    display: grid;
+  }
+  .redes {
+    max-width: 80%;
+    align-self: center;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    margin-top: -25px;
+  }
+  #caixaRodape3 h1 {
+    text-align: center;
+    color: darkgreen;
+  }
+  .inputTextRodape {
+    height: 25px;
+  }
+  #cellCaixaRodape3 p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1011px) {
+  #cabecalho {
+    height: 72px;
+    width: 99.9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.73);
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+  #logo1 {
+    height: 85%;
+    margin-left: 30px;
+  }
+
+  #containerBotaoCabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 40px;
+  }
+
+  .botaoCabecalho {
+    margin: 0 15px;
+    border: none;
+    position: relative;
+    font-size: 1em;
+    transition: 0.2s;
+    text-decoration: none;
+    color: black;
+  }
+
+  .botaoCabecalho:hover {
+    cursor: pointer;
+    color: rgb(80, 177, 123);
+  }
+
+  #botaoPerfil {
+    color: white;
+    padding: 11px 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .botaoPerfil:hover {
+    cursor: pointer;
+    opacity: 80%;
+  }
+
+  /* ----------------------------------------- fim cabecalho --------------------------------------------*/
+
+  /* ------------------------------------------ inicio corpo ------------------------------------------- */
+
+  .backgorundPerfil {
     box-sizing: border-box;
     height: 300px;
     background-color: rgba(0, 0, 0, 0.164);
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 280px;
-}
+    width: 99.9%;
+  }
 
-button {
+  button {
     all: unset;
     cursor: pointer;
     outline: revert;
-}
+  }
 
-#containerFormEditarBackground {
-    box-sizing: border-box;
-    position: absolute;
-    margin-top: 20px;
-    right: 20px;
-}
-
-#iconEditarBackgorund {
-    height: 31px;
-    width: 31px;
-}
-
-.fotoPerfil {
+  .fotoPerfil {
     margin-top: 90px;
     width: 343px;
     height: 341px;
-}
+  }
 
-.institutionName {
+  .institutionName {
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -111,27 +998,15 @@ button {
     height: 260px;
     width: 100%;
     align-items: center;
-}
+  }
 
-.institutionName h1 {
+  .institutionName h1 {
     margin-top: 130px;
     text-align: center;
     font-size: 30px;
-}
+  }
 
-#containerFormEditarNome {
-    box-sizing: border-box;
-    position: absolute;
-    margin-top: 132px;
-    margin-left: 250px;
-}
-
-#iconEditarNome {
-    height: 24px;
-    width: 21px;
-}
-
-.sobre {
+  .sobre {
     height: 400px;
     width: 100%;
     box-sizing: border-box;
@@ -139,9 +1014,9 @@ button {
     display: flex;
     flex-direction: column;
     align-content: center;
-}
+  }
 
-#boxSobre {
+  #boxSobre {
     width: 88%;
     height: 220px;
     box-sizing: border-box;
@@ -152,41 +1027,25 @@ button {
     border-radius: 22px;
     overflow: auto;
     background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.336) 0px 0px 73px
-}
+    box-shadow: rgba(0, 0, 0, 0.336) 0px 0px 73px;
+  }
 
-.sobre h1 {
+  .sobre h1 {
     margin: 20px;
     font-size: 20px;
     text-align: left;
     margin-bottom: 5px;
-}
+  }
 
-#containerFormEditarSobre {
-    display: flex;
-    width: auto;
-    height: 40px;
-    position: absolute;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 120px;
-}
-
-#iconEditarSobre {
-    height: 24px;
-    width: 21px;
-}
-
-.sobre p {
+  .sobre p {
     margin-top: 10px;
     margin: 20px;
     margin-bottom: 40px;
     font-size: 15px;
     text-align: justify;
+  }
 
-}
-
-.contato {
+  .contato {
     box-sizing: border-box;
     display: flex;
     width: 100%;
@@ -194,50 +1053,33 @@ button {
     position: relative;
     flex-direction: column;
     align-self: center;
-}
+  }
 
-.contato h1 {
+  .contato h1 {
     font-size: 30px;
-    margin-left: 125px;
+    margin-left: 110px;
     text-align: left;
-}
+    width: 700px;
+  }
 
-#containerFormEditarContato {
-    box-sizing: border-box;
-    display: flex;
-    width: auto;
-    height: 40px;
-    position: absolute;
-    flex-direction: column;
-    left: 250px;
-    margin-top: 5px;
-}
-
-#iconEditarContato {
-    height: 24px;
-    width: 21px;
-}
-
-.infos {
-
+  .infos {
     box-sizing: border-box;
     width: 98%;
     padding: 60px;
     justify-content: space-evenly;
     align-self: center;
     display: flex;
+  }
 
-}
-
-.infos h1 {
+  .infos h1 {
     width: 100px;
     margin: 10px;
     font-size: 28px;
     align-self: center;
     text-align: left;
-}
+  }
 
-.infos h2 {
+  .infos h2 {
     width: 200px;
     margin: 10px;
     margin-top: 5px;
@@ -245,50 +1087,32 @@ button {
     text-align: left;
     font-size: 20px;
     font-weight: normal;
-}
+  }
 
-
-
-.linha {
+  .linha {
     margin: auto;
     width: 95%;
     height: 1px;
     color: black;
     background-color: black;
     align-self: center;
-}
+  }
 
-.vagas {
+  .vagas {
     box-sizing: border-box;
     display: inline-flex;
     width: 100%;
     height: 100px;
-}
+  }
 
-.vagas h1 {
+  .vagas h1 {
     font-size: 30px;
     margin-left: 125px;
     margin-top: 90px;
     text-align: left;
-}
+  }
 
-#containerFormEditarVagas {
-    box-sizing: border-box;
-    display: flex;
-    width: auto;
-    height: 40px;
-    position: absolute;
-    flex-direction: column;
-    left: 270px;
-    margin-top: 92px;
-}
-
-#iconEditarVagas {
-    height: 24px;
-    width: 21px;
-}
-
-.boxes {
+  .boxes {
     width: 100%;
     height: 700px;
     position: relative;
@@ -297,45 +1121,44 @@ button {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-}
+  }
 
-.card {
-
+  .card {
     margin-top: -200px;
     box-sizing: border-box;
     width: 20%;
     height: 300px;
     border-radius: 22px;
-}
+  }
 
-#imgCard {
+  #imgCard {
     display: flex;
     width: 100%;
     height: 100%;
-}
+  }
 
-#palhaco {
+  #palhaco {
     border-style: unset;
     border-radius: 22px;
     height: auto;
     border: 1px solid black;
-}
+  }
 
-#cuidaCachorro {
+  #cuidaCachorro {
     border-style: unset;
     border-radius: 22px;
     height: auto;
     border: 1px solid black;
-}
+  }
 
-#adestrador {
+  #adestrador {
     border-style: unset;
     border-radius: 22px;
     height: auto;
     border: 1px solid black;
-}
+  }
 
-#textoCard {
+  #textoCard {
     box-sizing: border-box;
     margin-top: -30px;
     border-radius: 32px;
@@ -343,45 +1166,44 @@ button {
     background-color: rgba(255, 255, 255, 0.864);
     position: relative;
     box-shadow: rgba(0, 0, 0, 0.336) 0px 0px 73px;
-}
+  }
 
-.card h1 {
+  .card h1 {
     font-size: 15px;
     text-align: left;
-}
+  }
 
-.card p {
+  .card p {
     text-align: left;
-}
+  }
 
-#more {
+  #more {
     font-size: 12px;
     text-align: right;
-}
+  }
 
-/* ------------------------------------------- fim corpo ---------------------------------------------- */
+  /* ------------------------------------------- fim corpo ---------------------------------------------- */
 
+  /* ----------------------------------------- inicio rodape -------------------------------------------- */
 
-/* ----------------------------------------- inicio rodape -------------------------------------------- */
-
-#rodape {
+  #rodape {
     box-sizing: border-box;
     box-shadow: rgba(0, 0, 0, 0.25) 0px -39px 43px;
-    height: 100%;
+    height: 99.9%;
     background-color: #d6dbde;
     display: flex;
-}
+  }
 
-.containerRodape {
+  .containerRodape {
     margin-top: 40px;
     height: 300px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     position: relative;
-}
+  }
 
-#caixaRodape1 {
+  #caixaRodape1 {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -389,21 +1211,21 @@ button {
     text-align: left;
     line-height: 1;
     color: rgb(70, 70, 70);
-}
+  }
 
-#caixaRodape1 h1 {
+  #caixaRodape1 h1 {
     font-size: 20px;
-}
+  }
 
-#caixaRodape1 p {
+  #caixaRodape1 p {
     margin: 7px;
-    margin-left: 30px;
+    margin-left: 2px;
     width: 130px;
     text-align: left;
-    font-size: 15px;
-}
+    font-size: 18px;
+  }
 
-#caixaRodape2 {
+  #caixaRodape2 {
     display: flex;
     flex-direction: column;
     font-size: 17px;
@@ -413,15 +1235,18 @@ button {
     line-height: 1;
     color: rgb(70, 70, 70);
     text-shadow: none;
-}
+  }
 
-#caixaRodape2 h1 {
+  #caixaRodape2 h1 {
+    margin-top: -8px;
     text-align: left;
     margin-bottom: 18px;
     font-size: 20px;
-}
+    margin-left: -20px;
+  }
 
-.inputTextRodape {
+  .inputTextRodape {
+    margin-left: -25px;
     height: 43px;
     width: 306.4px;
     padding: 3px 5px;
@@ -429,15 +1254,16 @@ button {
     font-size: 17px;
     border: 1px solid black;
     border-radius: 3px;
-}
+  }
 
-#caixaRodape2 textarea {
-    font-size: 17px;
+  #caixaRodape2 textarea {
+    font-size: 18px;
     border: 1px solid black;
     border-radius: 3px;
-}
+    margin-left: -25px;
+  }
 
-#submitRodape2 {
+  #submitRodape2 {
     width: 110px;
     border-radius: 19px;
     border-width: 1px;
@@ -453,13 +1279,13 @@ button {
     font-size: 15px;
     cursor: pointer;
     transition: 0.4s ease;
-}
+  }
 
-#submitRodape2:hover {
+  #submitRodape2:hover {
     opacity: 0.7;
-}
+  }
 
-#caixaRodape3 {
+  #caixaRodape3 {
     display: flex;
     flex-direction: column;
     font-size: 17px;
@@ -469,30 +1295,34 @@ button {
     line-height: 1;
     color: rgb(70, 70, 70);
     text-shadow: none;
-}
+  }
 
-#caixaRodape3 h1 {
+  #caixaRodape3 h1 {
+    margin-top: -10px;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 20px;
-}
+    margin-left: 10px;
+  }
 
-#caixaRodape3 img {
-    width: 350px;
+  #caixaRodape3 img {
+    width: 310px;
     position: relative;
-    left: 10px;
+    left: 1px;
     top: -5px;
-}
+    margin-bottom: 10px;
+  }
 
-#cellCaixaRodape3 {
+  #cellCaixaRodape3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
     position: relative;
     top: -10px;
-}
+  }
 
-#cellCaixaRodape3 p {
+  #cellCaixaRodape3 p {
     margin: 10px;
+  }
 }
