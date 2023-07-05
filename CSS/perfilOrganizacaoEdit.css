@@ -209,12 +209,13 @@ button {
   position: absolute;
   flex-direction: column;
   left: 250px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 #iconEditarContato {
   height: 24px;
   width: 21px;
+  margin-top: 5px;
 }
 
 .infos {
